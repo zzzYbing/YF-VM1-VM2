@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>setsol</class>
+ <widget class="QDialog" name="setsol">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>方案信息</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* 设置对话框的背景色和边框 */
+QDialog {
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+}
+
+/* 设置 QLabel 的字体和颜色 */
+QLabel {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #333333;
+}
+
+/* 设置 QLineEdit 的背景色、边框和字体 */
+QLineEdit {
+    background-color: #f5f5f5;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #333333;
+}
+
+/* 设置 QPushButton 的背景色、边框、字体和鼠标悬停效果 */
+QPushButton {
+    background-color: #0078d4;
+    border: 1px solid #005a9e;
+    border-radius: 4px;
+    padding: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+QPushButton:hover {
+    background-color: #005a9e;
+    border: 1px solid #003a6b;
+}
+
+/* 设置 QHBoxLayout 的间距 */
+QHBoxLayout {
+    spacing: 10px;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>120</y>
+     <width>189</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="lab_name">
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>方案名称</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="name"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>160</y>
+     <width>361</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QLabel" name="lab_path">
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>方案路径</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="path">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>选择</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
