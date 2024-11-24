@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>分机程序</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget#tool QToolButton{border:none;background-color:rgb(67,74,80);color:white;min-height:40px;max-height:40px;font-size:14px;min-width:120px;}
+
+QWidget#tool QToolButton:checked{background-color:rgb(84,92,100);}
+
+QWidget#tool {background-color:rgb(67,74,80);}
+</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_4">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="main_toolbar">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="btn_solution">
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: rgb(50, 60, 70); /* 更深灰色背景 */
+    color: #FFC107;                    /* 深黄色文字 */
+    border: 2px solid rgb(50, 60, 70); /* 与背景色匹配的边框 */
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-family: &quot;Arial&quot;; /* 字体 */
+    border-radius: 0px;  /* 去除圆角 */
+}
+
+QPushButton:hover {
+    background-color: #BDBDBD; /* 悬停时的背景色为浅灰色 */
+    color: #FFC107;            /* 保持深黄色文字 */
+    border: 2px solid #BDBDBD; /* 边框也变为浅灰色 */
+}
+
+QPushButton:pressed {
+    background-color: #9E9E9E; /* 按下时的背景色为深灰色 */
+    color: #FFC107;            /* 保持深黄色文字 */
+    border: 2px solid #9E9E9E; /* 边框也变为深灰色 */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>方案管理</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_save">
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: rgb(50, 60, 70); /* 更深灰色背景 */
+    color: #FFC107;                    /* 深黄色文字 */
+    border: 2px solid rgb(50, 60, 70); /* 与背景色匹配的边框 */
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-family: &quot;Arial&quot;; /* 字体 */
+    border-radius: 0px;  /* 去除圆角 */
+}
+
+QPushButton:hover {
+    background-color: #BDBDBD; /* 悬停时的背景色为浅灰色 */
+    color: #FFC107;            /* 保持深黄色文字 */
+    border: 2px solid #BDBDBD; /* 边框也变为浅灰色 */
+}
+
+QPushButton:pressed {
+    background-color: #9E9E9E; /* 按下时的背景色为深灰色 */
+    color: #FFC107;            /* 保持深黄色文字 */
+    border: 2px solid #9E9E9E; /* 边框也变为深灰色 */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>保存全部</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QAxWidget" name="axWidget">
+        <property name="control" stdset="0">
+         <string>{b60d44e7-1726-42aa-9ed5-d5d512a6c1f2}</string>
+        </property>
+        <property name="maximumSize" stdset="0">
+         <size>
+          <width>16777215</width>
+          <height>40</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <widget class="QWidget" name="tool" native="true">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>40</height>
+       </size>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item row="0" column="3">
+        <widget class="QToolButton" name="btn_vision">
+         <property name="text">
+          <string>视觉操作界面</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QToolButton" name="btn_control">
+         <property name="text">
+          <string>通讯配置</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QToolButton" name="btn_display">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>显示界面</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="2">
+        <widget class="QToolButton" name="btn_native">
+         <property name="text">
+          <string>本机操作</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QStackedWidget" name="stackedWidget"/>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QAxWidget</class>
+   <extends>QWidget</extends>
+   <header>qaxwidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+ </buttongroups>
+</ui>
